@@ -91,14 +91,14 @@ The ETL process involved 2 layer of data landing, transformation and loading.
 
 	|              Schema                  |             Table  	   |
 	|:------------------------------------:|:-------------------------:|
-	|               NYC_INS                |    STG_NYC_FOOD_ESTD_INS  |
+	|               CHICAGO_INS            |    STG_CHICAGO_FOOD_ESTD_INS  |
 <p align="center">  
   <br>
 	<a href="#">
         <img src="img/stage_load.jpg"> 
   </a>		
     <br>
-	Figure 3 : New York City Food Inspection Staging Workflow
+	Figure 3 : Chicago Food Inspection Staging Workflow
 </p>
 <br>
 	
@@ -106,34 +106,34 @@ The ETL process involved 2 layer of data landing, transformation and loading.
 
 	|              Schema                  |             Table  	   |
 	|:------------------------------------:|:-------------------------:|
-	|               NYC_INS                |    Dim_NYC_Addresses  |
-	|               NYC_INS                |    Dim_NYC_Borough  |
-	|               NYC_INS                |    Dim_NYC_Critical_Flag  |
-	|               NYC_INS                |    Dim_NYC_Cuisine  |
-	|               NYC_INS                |    Dim_NYC_Inspection_Actions  |
-	|               NYC_INS                |    Dim_NYC_Inspection_Grades  |
-	|               NYC_INS                |    Dim_NYC_Inspection_Type  |
-	|               NYC_INS                |    Dim_NYC_Food_Places
-	|               NYC_INS                |    Dim_NYC_Violation_Codes  |
-	|               NYC_INS                |    FCT_NYC_Food_Inspections  |
-	|               NYC_INS                |    FCT_NYC_FoodInspection_Violations  |
+	|               CHICAGO_INS                |    Dim_Chicago_BusinessLicenses  |
+	|               CHICAGO_INS                |    Dim_Chicago_FacilityType  |
+	|               CHICAGO_INS                |    Dim_Chicago_FoodInspectionResults  |
+	|               CHICAGO_INS                |    Dim_Chicago_FoodInspectionType  |
+	|               CHICAGO_INS                |    Dim_Chicago_FoodRiskCategory  |
+	|               CHICAGO_INS                |    Dim_Chicago_Geo  |
+	|               CHICAGO_INS                |    Dim_Chicago_Restaurants  |
+	|               CHICAGO_INS                |    Dim_Chicago_ViolationCodes_SCD
+	|               CHICAGO_INS                |    FCT_Chicago_FoodInspections_Violations  |
+	|               CHICAGO_INS                |    FCT_Chicago_FoodInspections  |
+	|               CHICAGO_INS                |    FCT_NYC_FoodInspection_Violations  |
 <br>
 <p align="center">  
   <br>
 	<a href="#">
-        <img src="img/dim_load.jpg">
+        <img src="img/dimload.jpg">
   </a>		
     <br>
-	Figure 4 : New York City Food Inspection Dimensional Workflow (Dimension Container)
+	Figure 4 : Chicago Food Inspection Dimensional Workflow (Dimension Container)
 </p>
 <br>
 <p align="center">  
   <br>
 	<a href="#">
-        <img src="img/fact_load.jpg">
+        <img src="img/fctload.jpg">
   </a>		
     <br>
-	Figure 5 : New York City Food Inspection Dimensional Workflow (Fact Container) 
+	Figure 5 : Chicago Food Inspection Dimensional Workflow (Fact Container) 
 </p>
 <br>
 
