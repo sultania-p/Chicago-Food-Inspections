@@ -61,30 +61,30 @@ Below tools have been utilized for the various segments involving Data Profiling
 
 ## Data Modeling
 
-This project leverages the capability of ER/Studio Data Architect to design, visualize, and manage data models and metadata for the database. ER/Studio allowed to create conceptual, logical, and physical data models and map the relationships and dependencies between them.
+This project leverages the capability of ER/Studio Data Architect to design, visualize, and manage data models and metadata for the database. ER/Studio allowed to create conceptual, logical, and physical data models and map the relationships and dependencies between them. In order to source this data into data warehouse, I have modeled a multi-fact dimensional model using Normalization and Schema-design strategies.
 
 <p align="center">  
   <br>
 	<a href="#">
-        <img src="img/stage_model.png"> 
+        <img src="img/stagemodel.jpg"> 
   </a>		
     <br>
-	Figure 1 : New York City Food Inspection Stage Data Model
+	Figure 1 : Chicago Food Inspection Stage Data Model
 </p>
 <br>
 
 <p align="center">  
   <br>
 	<a href="#">
-        <img src="img/dim_model.jpg"> 
+        <img src="img/dimmodel.jpg"> 
   </a>		
     <br>
-	Figure 2 : New York City Food Inspection Dimensional Data Model
+	Figure 2 : Chicago Food Inspection Dimensional Data Model
 </p>
 
 ## Data Integration / ETL Pipeline
 
-In this project, data is analysed, profiled, transformed and loaded into Microsoft SQL server by Alteryx. Data is collected in the form of flat files (csv/tsv) and is moved to landing zones (Stage) in SQL Server.
+In this project, data is analysed, profiled, transformed and loaded into Microsoft SQL server by Alteryx. Data is collected in the form of flat files (csv/tsv) and is moved to landing zones (Stage) in SQL Server. While working on the data integration, I have encountered various data anamolies and quality issues which were tackled using data transformations to ensure high data quality for enterprise reporting.
 
 The ETL process involved 2 layer of data landing, transformation and loading.
 - **Landing or Staging Data Layer**: The data is extracted form source and staged into the SQL Server database. Here the main focus is to land the data from source without minimal transformation (as-is data load). Also, ETL Audit fields such as DI_FILENAME, DI_WORKFLOWNAME, DI_CREATEDATE etc. were added to identify newly loaded or updated records by using audit columns.
