@@ -147,7 +147,7 @@ BI reporting—preparing, analyzing, and portraying business metrics is fundamen
         <img src="img/bi-1.jpg">
   </a>		
     <br>
-	Figure 6 : Executive Summary Dashboard
+	Figure 6 : Total Inspections by Time
 </p>
 <br>
 <p align="center">  
@@ -156,7 +156,7 @@ BI reporting—preparing, analyzing, and portraying business metrics is fundamen
         <img src="img/bi-2.jpg">
   </a>		
     <br>
-	Figure 7 : Inspection Results over Time
+	Figure 7 : Inspection Results Distribution over Time
 </p>
 <br>
 <p align="center">  
@@ -165,15 +165,6 @@ BI reporting—preparing, analyzing, and portraying business metrics is fundamen
         <img src="img/bi-3.jpg">
   </a>		
     <br>
-	Figure 8 : Critical Violations Distribution by Neighborhood
-</p>
-<br>
-<p align="center">  
-  <br>
-	<a href="#">
-        <img src="img/bi-4.jpg">
-  </a>		
-    <br>
-	Figure 9 : Inspection Results by Geography (Tableau Maps)
+	Figure 8 : Inspection Results by Geography
 </p>
 <br>
